@@ -1,0 +1,58 @@
+
+
+:root{
+    --color-P:rgba(53,56,49);
+    --color-S: rgb(126, 125, 112);
+    --color-A: rgba(49,200,205);
+  }
+
+.bg-P{
+  background-color: var(--color-P);
+}
+.bg-S{
+  background-color: var(--color-S);
+}
+.bg-A{
+  background-color: var(--color-A);
+}
+
+.title-font {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:lighter;
+  font-style: normal;
+}
+
+.body-font {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.tx-1 {
+  color: var(--color-P);
+}
+.tx-2 {
+  color: var(--color-S);
+}
+.tx-3 {
+  color: var(--color-A);
+}
+.nav-link{
+    transition: all 0.2s;
+    position: relative;
+}
+.nav-link:hover{
+    text-decoration: underline;
+
+}
+
+.nav-link:hover::after{
+    content:'' ;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-A);
+    position: absolute;
+    bottom:0;
+    left: 0;
+
+}
